@@ -68,7 +68,7 @@ npm run test
 Clone the project and install dependencies:
 
 ```bash
-git clone https://github.com/your-username/vehicle-auctions.git
+git clone https://github.com/SidneiJSilva/vehicle-auctions.git
 cd vehicle-auctions
 npm install
 ```

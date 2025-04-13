@@ -1,13 +1,13 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import type { Vehicle } from '@/types/vehicle'
+import type { Vehicle } from '@/interfaces/vehicle.interface'
 import { Card, CardContent } from '@/components/ui/card'
 import { useRouter } from 'next/navigation'
 import { formatNumberWithSeparators } from '@/helpers/numbers'
-import VehicleFavoriteButton from './VehicleFavoriteButton'
+import VehicleFavoriteButton from '../buttons/FavoriteButton'
 
-interface VehicleItemProps {
+type VehicleItemProps = {
   vehicle: Vehicle
 }
 

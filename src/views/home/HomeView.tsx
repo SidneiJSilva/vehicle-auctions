@@ -3,9 +3,9 @@
 import { useMemo } from 'react'
 import { useLoadVehicles } from '@/hooks/useLoadVehicles'
 import useVehicleStore from '@/store/vehicleStore'
-import VehicleCard from './VehicleCard'
+import VehicleCard from '@/components/vehicle/home/VehicleCard'
 
-export default function Home() {
+export default function HomeView() {
   useLoadVehicles()
   const { vehicleList } = useVehicleStore()
 

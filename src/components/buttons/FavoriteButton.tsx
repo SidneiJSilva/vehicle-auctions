@@ -1,13 +1,11 @@
 import useVehicleStore from '@/store/vehicleStore'
-import { FavoriteButton } from '../home/VehicleCard.styled'
+import { Favorite } from '../vehicle/home/VehicleCard.styled'
 
-interface VehicleFavoriteButtonProps {
+type VehicleFavoriteButtonProps = {
   id: string
 }
 
-export default function VehicleFavoriteButton({
-  id
-}: VehicleFavoriteButtonProps) {
+export default function FavoriteButton({ id }: VehicleFavoriteButtonProps) {
   const isFavorite = useVehicleStore((state) => state.favVehicles.includes(id))
   const addFav = useVehicleStore((state) => state.addFav)
   const removeFav = useVehicleStore((state) => state.removeFav)
@@ -24,9 +22,9 @@ export default function VehicleFavoriteButton({
 
   return (
     <div className="cursor-pointer" onClick={handleClick}>
-      <FavoriteButton data-active={isFavorite} aria-label="Favoritar veículo">
+      <Favorite data-active={isFavorite} aria-label="Favoritar veículo">
         {isFavorite ? '❤️' : '🤍'}
-      </FavoriteButton>
+      </Favorite>
     </div>
   )
 }

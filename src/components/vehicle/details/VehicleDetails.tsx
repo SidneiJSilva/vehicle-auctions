@@ -5,11 +5,11 @@ import VehicleDetailsImageGallery from './VehicleDetailsImageGallery'
 import VehicleDetailsSidebar from './VehicleDetailsSidebar'
 
 import useVehicleStore from '@/store/vehicleStore'
-import type { Vehicle } from '@/types/vehicle'
+import type { Vehicle } from '@/interfaces/vehicle.interface'
 import { useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 
-interface Props {
+type Props = {
   id: string
 }
 

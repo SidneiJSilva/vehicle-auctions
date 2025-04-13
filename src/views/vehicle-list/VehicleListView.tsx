@@ -1,7 +1,7 @@
 'use client'
 
-import Filters from './Filters'
-import VehicleList from './VehicleList'
+import Filters from '@/components/filters/Filters'
+import VehicleList from '@/components/vehicle-list/VehicleList'
 
 import { useLoadVehicles } from '@/hooks/useLoadVehicles'
 

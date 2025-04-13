@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react'
-import VehicleCard from '@/views/home/VehicleCard'
+import VehicleCard from '@/components/vehicle/home/VehicleCard'
 import { fireEvent } from '@testing-library/react'
 import { useRouter } from 'next/navigation'
 import '@testing-library/jest-dom'

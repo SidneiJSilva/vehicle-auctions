@@ -5,10 +5,6 @@
  * @throws {Error} If input is not a valid numeric string
  */
 export function formatNumberWithSeparators(numericString: string): string {
-  if (typeof numericString !== 'string') {
-    throw new TypeError('Input must be a string')
-  }
-
   if (!/^\d+$/.test(numericString)) {
     throw new Error('Input must contain only numeric characters')
   }

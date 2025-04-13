@@ -1,10 +1,10 @@
 import Separator from '@/components/layout/Separator'
-import VehicleFavoriteButton from './VehicleFavoriteButton'
+import VehicleFavoriteButton from '@/components/buttons/FavoriteButton'
 
 import { Calendar, Fuel, Gauge, Settings, Ticket, User } from 'lucide-react'
 import { formatNumberWithSeparators } from '@/helpers/numbers'
 
-import type { Vehicle } from '@/types/vehicle'
+import type { Vehicle } from '@/interfaces/vehicle.interface'
 
 export default function VehicleDetailsSidebar({
   vehicle

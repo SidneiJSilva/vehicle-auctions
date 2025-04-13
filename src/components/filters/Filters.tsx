@@ -16,11 +16,11 @@ import {
   PaginationPrevious
 } from '@/components/ui/pagination'
 
-import { Vehicle } from '@/types/vehicle'
+import { Vehicle } from '@/interfaces/vehicle.interface'
 
 import { Button } from '@/components/ui/button'
 import { Checkbox } from '@/components/ui/checkbox'
-import PriceRangeSlider from '@/views/vehicle-list/PriceRangeSlider'
+import PriceRangeSlider from '@/components/filters/PriceRangeSlider'
 
 import { useFilters } from '@/hooks/useFilters'
 import useVehicleStore from '@/store/vehicleStore'

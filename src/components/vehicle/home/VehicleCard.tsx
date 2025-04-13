@@ -8,14 +8,14 @@ import {
 } from './VehicleCard.styled'
 
 import { useRouter } from 'next/navigation'
-import { Vehicle } from '@/types/vehicle'
+import { Vehicle } from '@/interfaces/vehicle.interface'
 import { formatNumberWithSeparators } from '@/helpers/numbers'
 
 type Props = {
   vehicle: Vehicle
 }
 
-export default function VehicleCard2({ vehicle }: Props) {
+export default function VehicleCard({ vehicle }: Props) {
   const router = useRouter()
   const auctionDate = new Date(vehicle.auctionDateTime)
 

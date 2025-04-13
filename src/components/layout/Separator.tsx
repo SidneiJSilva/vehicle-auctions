@@ -1,4 +1,4 @@
-interface SeparatorProps {
+type SeparatorProps = {
   color?: string
   className?: string
 }

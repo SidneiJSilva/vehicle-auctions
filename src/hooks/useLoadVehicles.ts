@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect } from 'react'
-import { Vehicle } from '@/types/vehicle'
+import { Vehicle } from '@/interfaces/vehicle.interface'
 import { v4 as uuidv4 } from 'uuid'
 
 import useVehicleStore from '@/store/vehicleStore'

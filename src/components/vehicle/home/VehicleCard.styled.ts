@@ -63,7 +63,7 @@ export const AuctionTag = styled.div`
   width: fit-content;
 `
 
-export const FavoriteButton = styled.button<{ 'data-active': boolean }>`
+export const Favorite = styled.button<{ 'data-active': boolean }>`
   margin-top: 8px;
   align-self: flex-end;
   background: none;
