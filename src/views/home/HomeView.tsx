@@ -2,7 +2,7 @@
 
 import { useMemo } from 'react'
 import { useLoadVehicles } from '@/hooks/useLoadVehicles'
-import useVehicleStore from '@/store/vehicleStore'
+import useVehicleStore from '@/store/vehicle.store'
 import VehicleCard from '@/components/vehicle/home/VehicleCard'
 
 export default function HomeView() {

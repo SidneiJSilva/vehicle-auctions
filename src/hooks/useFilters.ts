@@ -1,5 +1,5 @@
 import { useMemo } from 'react'
-import useVehicleStore from '@/store/vehicleStore'
+import useVehicleStore from '@/store/vehicle.store'
 
 export const useFilters = () => {
   const {

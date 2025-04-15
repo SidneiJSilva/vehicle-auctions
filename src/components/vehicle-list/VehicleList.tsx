@@ -1,7 +1,7 @@
 import VehicleListItem from './VehicleListItem'
 import { VehicleListEmptyResults } from './VehicleListEmptyResults'
 
-import useVehicleStore from '@/store/vehicleStore'
+import useVehicleStore from '@/store/vehicle.store'
 import { useFilters } from '@/hooks/useFilters'
 
 export default function VehicleList() {

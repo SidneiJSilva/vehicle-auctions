@@ -91,7 +91,9 @@ export default function VehicleDetailsSidebar({
           />
           <SpecItem
             label="First registration"
-            value={ownership.dateOfRegistration.toLocaleDateString()}
+            value={new Date(
+              vehicle.details.ownership.dateOfRegistration
+            ).toLocaleDateString()}
           />
           <SpecItem label="Documentation" value={ownership.logBook} />
         </div>

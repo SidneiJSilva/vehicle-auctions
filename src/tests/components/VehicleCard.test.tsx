@@ -2,38 +2,9 @@ import { render, screen } from '@testing-library/react'
 import VehicleCard from '@/components/vehicle/home/VehicleCard'
 import { fireEvent } from '@testing-library/react'
 import { useRouter } from 'next/navigation'
-import '@testing-library/jest-dom'
+import { mockVehicle } from '../mocks/mockVechiles'
 
-const mockVehicle = {
-  id: '1',
-  make: 'Toyota',
-  model: 'Corolla',
-  engineSize: '1.8L',
-  fuel: 'Gasoline',
-  year: 2020,
-  mileage: 35000,
-  auctionDateTime: new Date(Date.now() + 2 * 86400000),
-  startingBid: 15000,
-  favourite: false,
-  details: {
-    specification: {
-      vehicleType: 'Car',
-      colour: 'Red',
-      fuel: 'Gasoline',
-      transmission: 'Automatic',
-      numberOfDoors: 4,
-      co2Emissions: '120 g/km',
-      noxEmissions: 0.05,
-      numberOfKeys: 2
-    },
-    ownership: {
-      logBook: 'Present',
-      numberOfOwners: 1,
-      dateOfRegistration: new Date('2020-01-01')
-    },
-    equipment: ['Air Conditioning', 'Bluetooth']
-  }
-}
+import '@testing-library/jest-dom'
 
 jest.mock('next/navigation', () => ({
   useRouter: jest.fn()

@@ -4,7 +4,7 @@ export default function VehicleDetailsImageGallery() {
   return (
     <div>
       <div className="w-full h-120 bg-muted flex items-center justify-center text-sm text-muted-foreground">
-        Image
+        📷 Image
       </div>
 
       <div className="grid grid-cols-2 gap-2 mt-2">
@@ -13,7 +13,7 @@ export default function VehicleDetailsImageGallery() {
             key={index}
             className="h-60 bg-muted flex items-center justify-center text-sm text-muted-foreground"
           >
-            Image {index + 1}
+            📷 Image {index + 1}
           </div>
         ))}
       </div>

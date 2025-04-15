@@ -3,8 +3,9 @@
 import { notFound } from 'next/navigation'
 import VehicleDetailsImageGallery from './VehicleDetailsImageGallery'
 import VehicleDetailsSidebar from './VehicleDetailsSidebar'
+import { Button } from '@/components/ui/button'
 
-import useVehicleStore from '@/store/vehicleStore'
+import useVehicleStore from '@/store/vehicle.store'
 import type { Vehicle } from '@/interfaces/vehicle.interface'
 import { useEffect } from 'react'
 import { useRouter } from 'next/navigation'
@@ -48,12 +49,13 @@ export default function VehicleDetails({ id }: Props) {
 
   return (
     <div className="p-6 space-y-4">
-      <div
-        className="cursor-pointer text-blue-500 hover:underline"
+      <Button
+        variant="outline"
+        className="cursor-pointer"
         onClick={() => router.push('/vehicle-list')}
       >
         Back to list
-      </div>
+      </Button>
 
       <h1 className="text-4xl font-bold">
         {vehicle.make} {vehicle.model} ({vehicle.year})

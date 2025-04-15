@@ -35,6 +35,7 @@ const useVehicleStore = create<StoreInterface>((set) => ({
   setItemsPerPage: (pageSize) => set(() => ({ itemsPerPage: pageSize })),
 
   favVehicles: [],
+  setFavVehicles: (favIds) => set(() => ({ favVehicles: favIds })),
   addFav: (id) =>
     set((state) => ({
       favVehicles: state.favVehicles.includes(id)

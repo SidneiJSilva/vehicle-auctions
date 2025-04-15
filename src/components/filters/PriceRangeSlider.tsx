@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import { Slider } from '@/components/ui/slider'
-import useVehicleStore from '@/store/vehicleStore'
+import useVehicleStore from '@/store/vehicle.store'
 import { useFilters } from '@/hooks/useFilters'
 
 export default function PriceRangeSlider() {

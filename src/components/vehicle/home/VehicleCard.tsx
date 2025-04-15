@@ -26,7 +26,7 @@ export default function VehicleCard({ vehicle }: Props) {
         router.push(`/vehicle/${vehicle.id}`)
       }}
     >
-      <ImagePlaceholder>📷 Vehicle image</ImagePlaceholder>
+      <ImagePlaceholder>📷 Image</ImagePlaceholder>
 
       <Content>
         <Title>

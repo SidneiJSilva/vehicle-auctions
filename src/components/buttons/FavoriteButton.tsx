@@ -1,4 +1,4 @@
-import useVehicleStore from '@/store/vehicleStore'
+import useVehicleStore from '@/store/vehicle.store'
 import { Favorite } from '../vehicle/home/VehicleCard.styled'
 
 type VehicleFavoriteButtonProps = {

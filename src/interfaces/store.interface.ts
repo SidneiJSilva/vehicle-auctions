@@ -31,6 +31,7 @@ export interface StoreInterface {
 
   // Favorites
   favVehicles: string[]
+  setFavVehicles: (vehicles: string[]) => void
   addFav: (id: string) => void
   removeFav: (id: string) => void
 }

@@ -23,7 +23,7 @@ import { Checkbox } from '@/components/ui/checkbox'
 import PriceRangeSlider from '@/components/filters/PriceRangeSlider'
 
 import { useFilters } from '@/hooks/useFilters'
-import useVehicleStore from '@/store/vehicleStore'
+import useVehicleStore from '@/store/vehicle.store'
 
 export default function Filters() {
   const {

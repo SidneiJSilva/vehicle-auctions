@@ -67,7 +67,7 @@ export default function VehicleListItem({ vehicle }: VehicleItemProps) {
     >
       <CardContent className="flex gap-4 items-stretch h-full">
         <div className="w-28 h-28 bg-muted flex items-center justify-center text-sm text-muted-foreground">
-          Image
+          📷 Image
         </div>
 
         <div className="flex-1 space-y-2">
@@ -80,7 +80,10 @@ export default function VehicleListItem({ vehicle }: VehicleItemProps) {
               <p>
                 {vehicle.year} • {vehicle.engineSize} • {vehicle.fuel}
               </p>
-              <p>Mileage: {vehicle.mileage.toLocaleString()} km</p>
+              <p>
+                Mileage:{' '}
+                {`${formatNumberWithSeparators(vehicle.mileage.toString())}km`}
+              </p>
             </div>
 
             <p>
