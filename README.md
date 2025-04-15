@@ -47,18 +47,27 @@ src/
 
 ---
 
-## 🧪 Testing
+## 🧪 Tests
 
-This project includes tests for:
+The project uses **Jest** and **React Testing Library** to test UI components and Zustand store logic.
 
-- `VehicleCard` component rendering
-- Redirection behavior using `router.push`
+### ✅ Coverage
 
-To run tests:
+- `VehicleCard`: rendering and redirect on click
+- `VehicleListItem`: rendering and redirect on click
+- `VehicleDetails`: rendering from store and back button
+- `vehicleStore`: setting vehicle list, filtering, sorting, pagination, and favorites
+
+### ▶️ Run tests
 
 ```bash
-npm install
 npm run test
+```
+
+or with coverage:
+
+```bash
+npm run test:coverage
 ```
 
 ---
